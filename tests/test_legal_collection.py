@@ -28,6 +28,16 @@ def synthetic_font():
     return struct.pack('>I4H', 0x10000, 1, 0, 0, 0)+struct.pack('>4s3I', b'name', 0, 28, len(table))+table
 
 class LegalCollectionTests(unittest.TestCase):
+    def test_checked_in_supplements_retain_pinned_bytes(self):
+        supplements = json.loads((ROOT/'legal/supplements.json').read_text(encoding='utf-8'))
+        for supplement in supplements:
+            with self.subTest(path=supplement['file']):
+                self.assertEqual(
+                    digest((ROOT/supplement['file']).read_bytes()),
+                    supplement['sha256'],
+                    'Checkout must preserve the original upstream license bytes',
+                )
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix='hh-legal-test-')
         self.root = pathlib.Path(self.temporary.name)

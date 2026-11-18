@@ -10,3 +10,5 @@
 *.ttf -text
 *.png -text
 *.ico -text
+# Pinned upstream license hashes require the original bytes on every platform.
+legal/upstream/** -text

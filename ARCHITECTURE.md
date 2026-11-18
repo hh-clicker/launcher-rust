@@ -85,7 +85,8 @@ See THIRD_PARTY_NOTICES.md for the scope and remaining discovery limits.
 Only README, project LICENSE and third-party notices are embedded as documentation.
 Local QA reports, screenshots, toolchains, payload workdirs and artifacts are ignored.
 
-A clean source checkout must include `vendor/epaint`. Toolchain/crate input versions are
+A clean source checkout must include `vendor/epaint` and `legal/`, preserving the original
+bytes of the pinned upstream license supplements. Toolchain/crate input versions are
 pinned; host SDK and compiler selection are documented, not claimed byte-identical.
 Linux/macOS launchers, automatic EXE replacement and independent payload downloads are
 outside this implementation's current scope.

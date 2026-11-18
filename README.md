@@ -82,13 +82,13 @@ of this portable EXE with the Kotlin installer.
 Build prerequisites: Windows x64, Python 3.11+, Node.js with npm, MSVC x64 Build Tools,
 Windows SDK and Git for preparing source checkouts. Git is not a runtime dependency.
 `toolchain.json` pins verified Rust archives; `Cargo.lock` pins Rust dependencies.
-Keep `legal/` in the checkout: its reviewed font metadata, required-file policy and upstream
-license supplements are mandatory packaging inputs alongside `vendor/epaint`.
 The required epaint patch is included under `vendor/epaint` with upstream licenses.
 Keep `legal/` as source input: it contains reviewed required paths, font attributions
 and pinned upstream license supplements. The resource builder does not fetch legal
 texts from the network. See [Third-party notices](THIRD_PARTY_NOTICES.md) for coverage;
 a valid archive checksum alone does not establish legal completeness.
+Git must preserve the original bytes under `legal/upstream/`; `.gitattributes` disables
+line-ending conversion there because packaging verifies pinned upstream SHA-256 hashes.
 
 Prepare separate clean checkouts of the five repositories below at the exact commits
 listed in `release-inputs.json`. Pass their parent directory explicitly; scripts never
@@ -134,6 +134,12 @@ honors `CARGO_HOME`; standard-library notices come from the active Rust sysroot
 Reproducible inputs do not imply byte-identical EXEs across different SDK/MSVC versions.
 
 ## Manual build workflow
+
+Starting with 3.1.0, the main release workflow also builds this launcher after the
+Windows installer, using the same release tag for both launchers. It requires matching
+product versions and service SHAs in both manifests. `rust-release.yml` uploads
+`HH-Clicker-Rust-portable-<version>-win-x64.exe` and its SHA-256 to the existing draft;
+it refuses to modify published releases. Linux and macOS builds follow the Rust job.
 
 The separate `rust-windows-portable.yml` workflow belongs in
 [hh-clicker/.github](https://github.com/hh-clicker/.github), under `.github/workflows/`.

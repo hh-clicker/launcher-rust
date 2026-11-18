@@ -92,7 +92,9 @@ from one process working-set snapshot.
 fixtures for nested notices/OFL, Cargo license-file, missing required files, original
 copyright bytes, path safety, deduplication with all original attributions, exclusion
 of source bodies/unrelated docs, readable font notices and MPL source modification
-checks. These tests do not inspect a newly built EXE by themselves.
+checks. The suite also checks the pinned hashes of checked-in upstream supplements,
+so checkout line-ending changes fail before Rust compilation. These tests do not
+inspect a newly built EXE by themselves.
 
 For an artifact audit, initialize the build environment and build from the intended
 payload, then use `scripts/verify-single-exe.py <new-exe>`. The verifier requires the

@@ -1,0 +1,16 @@
+{
+  "epaint-0.31.1": ["LICENSE-MIT", "LICENSE-APACHE", "PATCHES.md"],
+  "epaint_default_fonts-0.31.1": ["fonts/OFL.txt"],
+  "ring-0.17.14": [
+    "LICENSE", "LICENSE-BoringSSL", "LICENSE-other-bits",
+    "third_party/fiat/LICENSE",
+    "src/polyfill/once_cell/LICENSE-APACHE",
+    "src/polyfill/once_cell/LICENSE-MIT"
+  ],
+  "ureq-2.12.1": ["LICENSE-MIT", "LICENSE-APACHE", "src/chunked/LICENSE-MIT", "src/chunked/LICENSE-APACHE"],
+  "tracing-core-0.1.36": ["LICENSE", "src/spin/LICENSE"],
+  "resvg-0.37.0": ["LICENSE.txt"],
+  "usvg-0.37.0": ["LICENSE.txt"],
+  "usvg-tree-0.37.0": ["LICENSE.txt"],
+  "usvg-parser-0.37.0": ["LICENSE.txt"]
+}

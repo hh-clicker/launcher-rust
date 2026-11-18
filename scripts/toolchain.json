@@ -1,0 +1,30 @@
+{
+  "rustc": {
+    "available": true,
+    "url": "https://static.rust-lang.org/dist/2026-11-12/rustc-1.100.0-x86_64-pc-windows-msvc.tar.gz",
+    "hash": "94301a26b63fa0861b4b5a588afa92310ae4a5aa1751609bbcef1142e9664baa",
+    "xz_url": "https://static.rust-lang.org/dist/2026-11-12/rustc-1.100.0-x86_64-pc-windows-msvc.tar.xz",
+    "xz_hash": "4f1f70145ab94e1036b6a9fb0a1fa1393352999701699aedab4dd2724047149e"
+  },
+  "cargo": {
+    "available": true,
+    "url": "https://static.rust-lang.org/dist/2026-11-12/cargo-1.100.0-x86_64-pc-windows-msvc.tar.gz",
+    "hash": "3414e3504c016e8e17f9be2b359c1585c26a7589515bd775367b754a3a0a8c9d",
+    "xz_url": "https://static.rust-lang.org/dist/2026-11-12/cargo-1.100.0-x86_64-pc-windows-msvc.tar.xz",
+    "xz_hash": "efb63c35df751dbd58b7aa73d6a43d75b00bd356bfdb925901e85379d0de108a"
+  },
+  "rust-std": {
+    "available": true,
+    "url": "https://static.rust-lang.org/dist/2026-11-12/rust-std-1.100.0-x86_64-pc-windows-msvc.tar.gz",
+    "hash": "8f8d40104ab98eab12e5d48a3a8b1499d1fb14d1c01399954ea78e76a2693b0d",
+    "xz_url": "https://static.rust-lang.org/dist/2026-11-12/rust-std-1.100.0-x86_64-pc-windows-msvc.tar.xz",
+    "xz_hash": "24ad2f28791e08a573b9c7df5efa3ace884eecd1fa7e7f5b62c65f4b49bb4532"
+  },
+  "rustfmt-preview": {
+    "available": true,
+    "url": "https://static.rust-lang.org/dist/2026-11-12/rustfmt-1.100.0-x86_64-pc-windows-msvc.tar.gz",
+    "hash": "8dc17cbc6f2b2a6954bd35deece48791ef4e01fdca12d74ac1be2a2e55e3a28d",
+    "xz_url": "https://static.rust-lang.org/dist/2026-11-12/rustfmt-1.100.0-x86_64-pc-windows-msvc.tar.xz",
+    "xz_hash": "1bdb2b7287fcbaafa002c3c000b94a740e2063df51d2dcdfccf875aa46f9fca7"
+  }
+}

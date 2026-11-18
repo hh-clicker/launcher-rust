@@ -1,0 +1,39 @@
+[
+  {
+    "runtime_name": "NotoEmoji-Regular",
+    "name": "Noto Emoji Regular",
+    "role": "monochrome emoji and symbol fallback",
+    "component": "epaint_default_fonts-0.31.1",
+    "source_file": "fonts/NotoEmoji-Regular.ttf",
+    "font_version": "Version 1.05 uh",
+    "sha256": "415dc6290378574135b64c808dc640c1df7531973290c4970c51fdeb849cb0c5",
+    "copyright": "Copyright 2013 Google Inc. All Rights Reserved.",
+    "license": "OFL-1.1",
+    "license_paths": ["licenses/epaint_default_fonts-0.31.1/fonts/OFL.txt"],
+    "upstream_license_url": "https://raw.githubusercontent.com/emilk/egui/0.31.1/crates/epaint_default_fonts/fonts/OFL.txt"
+  },
+  {
+    "runtime_name": "Inter",
+    "name": "Inter Regular",
+    "role": "proportional UI text",
+    "component": "launcher-assets",
+    "source_file": "assets/inter_regular.ttf",
+    "font_version": "Version 4.001;git-9221beed3",
+    "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+    "copyright": "Copyright 2016 The Inter Project Authors",
+    "license": "OFL-1.1",
+    "license_paths": ["licenses-and-assets/inter_ofl.txt"]
+  },
+  {
+    "runtime_name": "Inter Bold",
+    "name": "Inter SemiBold",
+    "role": "UI headings; internal Inter Bold key maps to the SemiBold file",
+    "component": "launcher-assets",
+    "source_file": "assets/inter_semibold.ttf",
+    "font_version": "Version 4.001;git-9221beed3",
+    "sha256": "78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+    "copyright": "Copyright 2016 The Inter Project Authors",
+    "license": "OFL-1.1",
+    "license_paths": ["licenses-and-assets/inter_ofl.txt"]
+  }
+]

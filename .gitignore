@@ -1,0 +1,34 @@
+# Generated build inputs, tools, outputs and portable state.
+/.tools/
+/target/
+/dist/
+/payload/
+/app/
+/data/
+/qa/
+
+# Keep the required local epaint patch in a clean checkout.
+/vendor/*
+!/vendor/epaint/
+
+# Local reports from development are not public documentation.
+/VALIDATION.md
+/GUI_REVIEW.md
+/FEATURES.md
+/.dev/
+/PROJECT_HANDOFF.md
+
+# Credentials, local configuration, dumps, editor and language caches.
+.env
+.env.*
+!.env.example
+*.log
+*.dmp
+*.pdb
+__pycache__/
+*.py[cod]
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
